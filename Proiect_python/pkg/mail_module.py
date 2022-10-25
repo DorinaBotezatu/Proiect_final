@@ -1,14 +1,6 @@
 import sys
 import smtplib
 
-sys.path.append("C:\\Users\\admin\\Documents\\__PyThOn\\0 PyP\\_module")  # pt pftp
-
-
-"""
-2. Adaugati o solutie in clasa Stoc care sa va avertizeze automat cand stocul unui produs este mai mic decat o 
-limita minima, predefinita per produs. Limita sa poata fi variabila (per produs). Preferabil sa 
-transmita automat un email de avertizare;"""
-
 
 def expediaza_alerta_stoc(limita):
     expeditor = 'botezatudorinaa@gmail.com'
@@ -47,9 +39,6 @@ def expediaza_alerta_stoc(limita):
         print('Mesajul nu a putut fi expediat!')
 
 
-
-
-
 def expediaza_fisa_produs():
     expeditor = 'botezatudorinaa@gmail.com'
     destinatar = ['office@infoacademy.net', 'paul@infoacademy.net']
@@ -85,6 +74,7 @@ def expediaza_fisa_produs():
     except Exception as e:
         print(e)
         print('Mesajul nu a putut fi expediat!')
+
 
 if __name__ == '__main__':
     pass
